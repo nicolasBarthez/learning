@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test</title>
+    <style>
+      legend {font-size: 120%; font-weight: bolder;}
+      li:hover {color: red}
+      a:hover {background: yellow}
+      a:active {background: red}
+      table {background: black}
+      th {background: lightgrey; font-weight: bolder; border:1px solid black; padding: 15px; text-align: left;}
+      td {background: white; border:1px solid black; padding: 15px; text-align: left;}
+      .mail {color: blue}
+    </style>
+  </head>
+
+  <body>
+    <h1 style = "background: grey" id = "top"><em><b><a href="https://en.wikipedia.org/wiki/Test">Tests</a></b></em></h1>
+    <br>
+    <!-- Ask for identification-->
+    <fieldset>
+      <legend>Identification</legend>
+      <form>
+        Please enter your name <br>
+        <input type="text" name="clientName" autofocus required> <br>
+        <label for="pass">What is your password?</label><br>
+        <input type="password" id="pass" name="userpassword" placeholder="password" ><br>
+        Where come you from? <br>
+        <select name="Countries">
+          <option value="fr">France</option>
+          <option value="us">United States</option>
+          <option value="de">Germany</option>
+        </select>
+      </form>
+      <br>
+      <form action="/Users/nicolasbarthez/Documents/Code">
+        <label for="age">Your age: </label>
+        <input type="number" min="18" max="150" step="1" value="30" id="age" name="age" required><br>
+        <label for="birthday">Your birthday: </label>
+        <input type="date" id="birthday" name="birthday"><br>
+        <label for="wakeUp">At what time do you usually wake up? </label>
+        <input type="time" id="wakeUp" name="wakeUp"><br>
+        <label for="color">Choose your favorite color: </label>
+        <input type="color" id="color" name="color"><br>
+        <label for="mood">How are you today? </label><br>
+        Bad <input type="range" min="0" max="100" step="10" value="50" id="mood" name="mood">Good<br>
+        <input type="submit" value="Send">
+      </form>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Text examples</legend>
+
+    <ol start = "17" >
+      <li>Fiss</li>
+      <li>Fiss</li>
+      <li>Fiss</li>
+      <ol type = a >
+        <li><i>X<sub>1</sub></i></li>
+        <li><i>X<sub>1</sub><sup>2</sup></i></li>
+        <li><i>X<sub>3</sub></i></li>
+      </ol>
+    </ol>
+    <br>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Media</legend>
+
+      <a href = "http://www.facebook.com"><img src="Photo profile NBA.jpg" width="15%" /></a>
+      <br>
+      <audio src="jackass theme song.mp3" controls loop>
+        <p>
+          Do not work for your browser... sorry!
+        </p>
+      </audio>
+      <br>
+      <br>
+      <video src="20141005_133640.mp4" controls width="10%">
+      </video>
+    </fieldset>
+  <br>
+  <hr>
+  <br>
+    <fieldset>
+      <legend>Tables examples</legend>
+      <table>
+        <thead>
+          <tr><th>Nom</th><th>Prénom</th><th>Mail</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Barthez</td><td>Nicolas</td><td class="mail">nicolas.barthez@gmail.com</td></tr>
+          <tr><td>Barthez</td><td>Raphaël</td><td class="mail">raphael.barthez@gmail.com</td></tr>
+        </tbody>
+      </table>
+    </fieldset>
+  <br>
+<!-- Form-->
+    <fieldset>
+      <legend>Forms examples</legend>
+
+      <form action="serveur de destination" method="get">
+        <p> Form 1 - Please enter a feedback</p>
+        <textarea rows="3" cols="200" name="feedback">Please enter your text here</textarea>
+        <br>
+        <input type="submit" value= "send">
+      </form>
+      <form>
+        <br>
+        <br>
+        <p> Form 2 - Select your experience</p>
+        <input type="checkbox" name="speciality" value="managing">Project Management<br>
+        <input type="checkbox" name="speciality" value="coding">Code<br>
+        <input type="checkbox" name="speciality" value="design">UX Designer<br>
+        <br>
+        Please enter your gender <br>
+        <input type="radio" name="gender" value="male">Male<br>
+        <input type="radio" name="gender" value="female">Female<br>
+        <input type="radio" name="gender" value="unknown">Unknown<br>
+        <br>
+        <input type="submit" value= "send">
+      </form>
+      <br>
+      <hr>
+      <form method="post" enctype="multipart/form-data" action="/Users/nicolasbarthez/Documents/Code/Crap/">
+        <p>Select your bank account details</p>
+        <input type="file" name="fileToUpload"> <br>
+        <p>Press this button to send it</p>
+        <input type="submit" value="Upload your file">
+      </form>
+      <br>
+    </fieldset>
+  <br>
+  <p><a href="#top">Return to the top</a></p>
+  </body>
+</html>
